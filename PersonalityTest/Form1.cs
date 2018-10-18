@@ -12,7 +12,7 @@ namespace PersonalityTest
 {
     public partial class Form1 : Form
     {
-        
+        //TODO: Add/ Change the answer system to a point-based one
         public struct Answers { public int a; public RadioButton n; }
         public Answers q1, q2, q3, q4, q5, q6;
 
