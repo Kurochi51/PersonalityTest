@@ -194,28 +194,28 @@ namespace PersonalityTest
             switch (f6.q1.a)
             {
                 case 1:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind +=5;
+                    p2.mind -=5;
                     break;
                 case 2:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind +=4;
+                    p2.mind -=4;
                     break;
                 case 3:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind +=2;
+                    p2.mind -=2;
                     break;
                 case 5:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind -=0;
+                    p2.mind +=0;
                     break;
                 case 6:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind -=2;
+                    p2.mind +=2;
                     break;
                 case 7:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind -=3;
+                    p2.mind +=3;
                     break;
                 default:
                     break;
@@ -223,28 +223,28 @@ namespace PersonalityTest
             switch (f6.q4.a)
             {
                 case 1:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind +=5;
+                    p2.mind -=5;
                     break;
                 case 2:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind +=4;
+                    p2.mind -=4;
                     break;
                 case 3:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind +=2;
+                    p2.mind -=2;
                     break;
                 case 5:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind -=0;
+                    p2.mind +=0;
                     break;
                 case 6:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind -=2;
+                    p2.mind +=2;
                     break;
                 case 7:
-                    p1.mind =;
-                    p2.mind =;
+                    p1.mind -=3;
+                    p2.mind +=3;
                     break;
                 default:
                     break;
@@ -546,28 +546,28 @@ namespace PersonalityTest
             switch (f6.q5.a)
             {
                 case 1:
-                    p1.energy =;
-                    p2.energy =;
+                    p1.energy +=4;
+                    p2.energy -=4;
                     break;
                 case 2:
-                    p1.energy =;
-                    p2.energy =;
+                    p1.energy +=2;
+                    p2.energy -=2;
                     break;
                 case 3:
-                    p1.energy =;
-                    p2.energy =;
+                    p1.energy +=1;
+                    p2.energy -=1;
                     break;
                 case 5:
-                    p1.energy =;
-                    p2.energy =;
+                    p1.energy -=1;
+                    p2.energy +=1;
                     break;
                 case 6:
-                    p1.energy =;
-                    p2.energy =;
+                    p1.energy -=3;
+                    p2.energy +=3;
                     break;
                 case 7:
-                    p1.energy =;
-                    p2.energy =;
+                    p1.energy -=4;
+                    p2.energy +=4;
                     break;
                 default:
                     break;
@@ -1250,28 +1250,28 @@ namespace PersonalityTest
             switch (f6.q2.a)
             {
                 case 1:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics -=3;
+                    p2.tactics +=3;
                     break;
                 case 2:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics -=2;
+                    p2.tactics +=2;
                     break;
                 case 3:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics -=0;
+                    p2.tactics +=0;
                     break;
                 case 5:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics +=2;
+                    p2.tactics -=2;
                     break;
                 case 6:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics +=4;
+                    p2.tactics -=4;
                     break;
                 case 7:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics +=5;
+                    p2.tactics -=5;
                     break;
                 default:
                     break;
@@ -1279,28 +1279,28 @@ namespace PersonalityTest
             switch (f6.q6.a)
             {
                 case 1:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics -=3;
+                    p2.tactics +=3;
                     break;
                 case 2:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics -=2;
+                    p2.tactics +=2;
                     break;
                 case 3:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics -=0;
+                    p2.tactics +=0;
                     break;
                 case 5:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics +=2;
+                    p2.tactics -=2;
                     break;
                 case 6:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics +=4;
+                    p2.tactics -=4;
                     break;
                 case 7:
-                    p1.tactics =;
-                    p2.tactics =;
+                    p1.tactics +=5;
+                    p2.tactics -=5;
                     break;
                 default:
                     break;
@@ -1631,28 +1631,28 @@ namespace PersonalityTest
             switch (f6.q3.a)
             {
                 case 1:
-                    p1.identify =;
-                    p2.identify =;
+                    p1.identify -=3;
+                    p2.identify +=3;
                     break;
                 case 2:
-                    p1.identify =;
-                    p2.identify =;
+                    p1.identify -=2;
+                    p2.identify +=2;
                     break;
                 case 3:
-                    p1.identify =;
-                    p2.identify =;
+                    p1.identify -=0;
+                    p2.identify +=0;
                     break;
                 case 5:
-                    p1.identify =;
-                    p2.identify =;
+                    p1.identify +=2;
+                    p2.identify -=2;
                     break;
                 case 6:
-                    p1.identify =;
-                    p2.identify =;
+                    p1.identify +=4;
+                    p2.identify -=4;
                     break;
                 case 7:
-                    p1.identify =;
-                    p2.identify =;
+                    p1.identify +=5;
+                    p2.identify -=5;
                     break;
                 default:
                     break;
