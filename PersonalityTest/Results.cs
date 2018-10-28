@@ -18,16 +18,20 @@ namespace PersonalityTest
         public Results()
         {
             InitializeComponent();
-            m1.Text = math?.a1;
-            m2.Text = math?.a2;
-            e1.Text = math?.b1;
-            e1.Text = math?.b2;
-            n1.Text = math?.c1;
-            n2.Text = math?.c2;
-            t1.Text = math?.d1;
-            t2.Text = math?.d2;
-            i1.Text = math?.e1;
-            i2.Text = math?.e2;
+        }
+
+        private void Results_Load(object sender, EventArgs e)
+        {
+            m1.Text = math.a1;
+            m2.Text = math.a2;
+            e1.Text = math.b1;
+            e2.Text = math.b2;
+            n1.Text = math.c1;
+            n2.Text = math.c2;
+            t1.Text = math.d1;
+            t2.Text = math.d2;
+            i1.Text = math.e1;
+            i2.Text = math.e2;
         }
     }
 }

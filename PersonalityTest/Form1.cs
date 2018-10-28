@@ -115,7 +115,8 @@ namespace PersonalityTest
             {
                 t++;
             }
-            if (t!=0)
+            // DEBUGGING > T==0, CHANGE TO != WHEN FINISHED
+            if (t==0)
             {
                 MessageBox.Show("You haven't answered all the questions!");
                 if (q1.n != null)

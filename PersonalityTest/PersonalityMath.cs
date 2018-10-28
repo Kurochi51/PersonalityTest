@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 
 namespace PersonalityTest
 {
@@ -1908,6 +1912,7 @@ namespace PersonalityTest
                     t.identify--;
                 }
             }
+            MessageBox.Show(a1);
             a1 = p1.mind.ToString();
             a2 = p2.mind.ToString();
             b1 = p1.energy.ToString();
