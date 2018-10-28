@@ -14,6 +14,7 @@ namespace PersonalityTest
         public Personality p1, p2, t;
 
         public int i;
+        public string a1, a2, b1, b2, c1, c2, d1, d2, e1, e2;
 
 #pragma warning disable CS1690 // Accessing a member on a field of a marshal-by-reference class may cause a runtime exception
 
@@ -1845,9 +1846,9 @@ namespace PersonalityTest
             Mind();
             if(t.mind!=0)
             {
-                while(t.mind!=0)
+                while(t.mind!=1)
                 {
-                    for(i=t.mind;i>0;i--)
+                    for (i = t.mind; i > 0; i--) 
                     {
                         p1.mind -= t.mind;
                         p2.mind += t.mind;
@@ -1858,7 +1859,7 @@ namespace PersonalityTest
             Energy();
             if (t.energy != 0)
             {
-                while (t.energy != 0)
+                while (t.energy != 1)
                 {
                     for (i = t.energy; i > 0; i--)
                     {
@@ -1871,7 +1872,7 @@ namespace PersonalityTest
             Nature();
             if (t.nature != 0)
             {
-                while (t.nature != 0)
+                while (t.nature != 1)
                 {
                     for (i = t.nature; i > 0; i--)
                     {
@@ -1884,7 +1885,7 @@ namespace PersonalityTest
             Tactics();
             if (t.tactics != 0)
             {
-                while (t.tactics != 0)
+                while (t.tactics != 1)
                 {
                     for (i = t.tactics; i > 0; i--)
                     {
@@ -1897,7 +1898,7 @@ namespace PersonalityTest
             Identify();
             if (t.identify != 0)
             {
-                while (t.identify != 0)
+                while (t.identify != 1)
                 {
                     for (i = t.identify; i > 0; i--)
                     {
@@ -1907,6 +1908,16 @@ namespace PersonalityTest
                     t.identify--;
                 }
             }
+            a1 = p1.mind.ToString();
+            a2 = p2.mind.ToString();
+            b1 = p1.energy.ToString();
+            b2 = p2.energy.ToString();
+            c1 = p1.nature.ToString();
+            c2 = p2.nature.ToString();
+            d1 = p1.tactics.ToString();
+            d2 = p2.tactics.ToString();
+            e1 = p1.identify.ToString();
+            e2 = p2.identify.ToString();
         }
     }
 }
