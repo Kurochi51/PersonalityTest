@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PersonalityTest
@@ -40,8 +34,8 @@ namespace PersonalityTest
         }
         public int j6
         {
-            get { return q5.a; }
-            set { q5.a = value; }
+            get { return q6.a; }
+            set { q6.a = value; }
         }
 
         public struct Answers { public int a; public RadioButton n; }
@@ -147,8 +141,8 @@ namespace PersonalityTest
             {
                 t++;
             }
-            // DEBUGGING > T==0, CHANGE TO != WHEN FINISHED
-            if (t==0)
+            // DEBUG MODE ACTIVE: to remove replace == with !=
+            if (t == 0)
             {
                 MessageBox.Show("You haven't answered all the questions!");
                 if (q1.n != null)

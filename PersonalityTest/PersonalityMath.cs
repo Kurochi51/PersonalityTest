@@ -13,29 +13,81 @@ namespace PersonalityTest
     class PersonalityMath
     {
         public int f1j1, f1j2, f1j3, f1j4, f1j5, f1j6;
-        public void Form()
-        {
-            Form1 f1 = new Form1();
-            if(f1.ShowDialog()==DialogResult.None)
-            {
-                f1j1 = f1.j1;
-            }
-            Form2 f2;
-            Form3 f3;
-            Form4 f4;
-            Form5 f5;
-            Form6 f6;
-            Form7 f7;
-            Form8 f8;
-            Form9 f9;
-            Form10 f10;
-        }
+        public int f2j1, f2j2, f2j3, f2j4, f2j5, f2j6;
+        public int f3j1, f3j2, f3j3, f3j4, f3j5, f3j6;
+        public int f4j1, f4j2, f4j3, f4j4, f4j5, f4j6;
+        public int f5j1, f5j2, f5j3, f5j4, f5j5, f5j6;
+        public int f6j1, f6j2, f6j3, f6j4, f6j5, f6j6;
+        public int f7j1, f7j2, f7j3, f7j4, f7j5, f7j6;
+        public int f8j1, f8j2, f8j3, f8j4, f8j5, f8j6;
+        public int f9j1, f9j2, f9j3, f9j4, f9j5, f9j6;
+        public int f10j1, f10j2, f10j3, f10j4, f10j5, f10j6;
+
 
         public struct Personality { public int mind; public int energy; public int nature; public int tactics; public int identify; }
         public Personality p1, p2, t;
 
         public int i;
-        public string a1, a2, b1, b2, c1, c2, d1, d2, e1, e2;
+
+        public int a1
+        {
+            get { return p1.mind; }
+            set { p1.mind = value; }
+        }
+
+        public int a2
+        { 
+            get { return p2.mind; }
+            set { p2.mind = value; }
+        }
+
+        public int b1
+        {
+            get { return p1.energy; }
+            set { p1.energy = value; }
+        }
+
+        public int b2
+        {
+            get { return p2.energy; }
+            set { p2.energy = value; }
+        }
+
+        public int c1
+        {
+            get { return p1.nature; }
+            set { p1.nature = value; }
+        }
+
+        public int c2
+        {
+            get { return p2.nature; }
+            set { p2.nature = value; }
+        }
+
+        public int d1
+        {
+            get { return p1.tactics; }
+            set { p1.tactics = value; }
+        }
+
+        public int d2
+        {
+            get { return p2.tactics; }
+            set { p2.tactics = value; }
+        }
+
+        public int e1
+        {
+            get { return p1.identify; }
+            set { p1.identify = value; }
+        }
+
+        public int e2
+        {
+            get { return p2.identify; }
+            set { p2.identify = value; }
+        }
 
 #pragma warning disable CS1690 // Accessing a member on a field of a marshal-by-reference class may cause a runtime exception
 
@@ -71,7 +123,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f1.q2.a)
+            switch (f1j2)
             {
                 case 1:
                     p1.mind += 4;
@@ -100,7 +152,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f1.q5.a)
+            switch (f1j5)
             {
                 case 1:
                     p1.mind -= 3;
@@ -130,7 +182,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f2.q3.a)
+            switch (f2j3)
             {
                 case 1:
                     p1.mind +=5;
@@ -160,7 +212,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f3.q1.a)
+            switch (f3j1)
             {
                 case 1:
                     p1.mind +=5;
@@ -190,7 +242,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f4.q5.a)
+            switch (f4j5)
             {
                 case 1:
                     p1.mind -=3;
@@ -220,7 +272,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f6.q1.a)
+            switch (f6j1)
             {
                 case 1:
                     p1.mind +=5;
@@ -250,7 +302,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f6.q4.a)
+            switch (f6j4)
             {
                 case 1:
                     p1.mind +=5;
@@ -280,7 +332,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f7.q1.a)
+            switch (f7j1)
             {
                 case 1:
                     p1.mind -=3;
@@ -310,7 +362,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f8.q5.a)
+            switch (f8j5)
             {
                 case 1:
                     p1.mind +=5;
@@ -340,7 +392,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f9.q4.a)
+            switch (f9j4)
             {
                 case 1:
                     p1.mind -=3;
@@ -370,7 +422,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f9.q5.a)
+            switch (f9j5)
             {
                 case 1:
                     p1.mind -=4;
@@ -399,7 +451,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f10.q1.a)
+            switch (f10j1)
             {
                 case 1:
                     p1.mind -=3;
@@ -429,7 +481,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f10.q6.a)
+            switch (f10j6)
             {
                 case 1:
                     p1.mind +=4;
@@ -462,7 +514,7 @@ namespace PersonalityTest
 
         public void Energy()
         {
-            switch (f3.q2.a)
+            switch (f3j2)
             {
                 case 1:
                     p1.energy -=4;
@@ -491,7 +543,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f5.q1.a)
+            switch (f5j1)
             {
                 case 1:
                     p1.energy -=4;
@@ -520,7 +572,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f5.q2.a)
+            switch (f5j2)
             {
                 case 1:
                     p1.energy +=4;
@@ -549,7 +601,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f5.q6.a)
+            switch (f5j6)
             {
                 case 1:
                     p1.energy -=4;
@@ -578,7 +630,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f6.q5.a)
+            switch (f6j5)
             {
                 case 1:
                     p1.energy +=4;
@@ -607,7 +659,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f7.q3.a)
+            switch (f7j3)
             {
                 case 1:
                     p1.energy +=4;
@@ -636,7 +688,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f9.q2.a)
+            switch (f9j2)
             {
                 case 1:
                     p1.energy +=4;
@@ -665,7 +717,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f9.q3.a)
+            switch (f9j3)
             {
                 case 1:
                     p1.energy -=4;
@@ -694,7 +746,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f10.q5.a)
+            switch (f10j5)
             {
                 case 1:
                     p1.energy +=4;
@@ -727,7 +779,7 @@ namespace PersonalityTest
 
         public void Nature()
         {
-            switch (f1.q6.a)
+            switch (f1j6)
             {
                 case 1:
                     p1.nature -= 4;
@@ -756,7 +808,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f2.q1.a)
+            switch (f2j1)
             {
                 case 1:
                     p1.nature +=5;
@@ -786,7 +838,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f2.q4.a)
+            switch (f2j4)
             {
                 case 1:
                     p1.nature -=3;
@@ -816,7 +868,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f3.q5.a)
+            switch (f3j5)
             {
                 case 1:
                     p1.nature +=5;
@@ -846,7 +898,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f4.q1.a)
+            switch (f4j1)
             {
                 case 1:
                     p1.nature +=5;
@@ -876,7 +928,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f4.q2.a)
+            switch (f4j2)
             {
                 case 1:
                     p1.nature =5;
@@ -906,7 +958,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f5.q4.a)
+            switch (f5j4)
             {
                 case 1:
                     p1.nature -=3;
@@ -936,7 +988,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f7.q2.a)
+            switch (f7j2)
             {
                 case 1:
                     p1.nature -=3;
@@ -966,7 +1018,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f7.q4.a)
+            switch (f7j4)
             {
                 case 1:
                     p1.nature +=5;
@@ -996,7 +1048,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f7.q6.a)
+            switch (f7j6)
             {
                 case 1:
                     p1.nature -=3;
@@ -1026,7 +1078,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f8.q3.a)
+            switch (f8j3)
             {
                 case 1:
                     p1.nature +=5;
@@ -1056,7 +1108,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f8.q4.a)
+            switch (f8j4)
             {
                 case 1:
                     p1.nature -=3;
@@ -1086,7 +1138,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f10.q4.a)
+            switch (f10j4)
             {
                 case 1:
                     p1.nature -=3;
@@ -1120,7 +1172,7 @@ namespace PersonalityTest
 
         public void Tactics()
         {
-            switch (f1.q3.a)
+            switch (f1j3)
             {
                 case 1:
                     p1.tactics += 5;
@@ -1150,7 +1202,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f2.q2.a)
+            switch (f2j2)
             {
                 case 1:
                     p1.tactics +=5;
@@ -1180,7 +1232,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f2.q6.a)
+            switch (f2j6)
             {
                 case 1:
                     p1.tactics +=5;
@@ -1210,7 +1262,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f3.q4.a)
+            switch (f3j4)
             {
                 case 1:
                     p1.tactics +=5;
@@ -1240,7 +1292,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f4.q3.a)
+            switch (f4j3)
             {
                 case 1:
                     p1.tactics -=3;
@@ -1270,7 +1322,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f4.q6.a)
+            switch (f4j6)
             {
                 case 1:
                     p1.tactics +=5;
@@ -1300,7 +1352,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f6.q2.a)
+            switch (f6j2)
             {
                 case 1:
                     p1.tactics -=3;
@@ -1330,7 +1382,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f6.q6.a)
+            switch (f6j6)
             {
                 case 1:
                     p1.tactics -=3;
@@ -1360,7 +1412,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f7.q5.a)
+            switch (f7j5)
             {
                 case 1:
                     p1.tactics -=3;
@@ -1390,7 +1442,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f8.q2.a)
+            switch (f8j2)
             {
                 case 1:
                     p1.tactics +=5;
@@ -1420,7 +1472,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f8.q6.a)
+            switch (f8j6)
             {
                 case 1:
                     p1.tactics -=3;
@@ -1450,7 +1502,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f10.q2.a)
+            switch (f10j2)
             {
                 case 1:
                     p1.tactics -=3;
@@ -1484,7 +1536,7 @@ namespace PersonalityTest
 
         public void Identify()
         {
-            switch (f1.q4.a)
+            switch (f1j4)
             {
                 case 1:
                     p1.identify += 5;
@@ -1514,7 +1566,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f2.q5.a)
+            switch (f2j5)
             {
                 case 1:
                     p1.identify -=3;
@@ -1544,7 +1596,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f3.q3.a)
+            switch (f3j3)
             {
                 case 1:
                     p1.identify +=5;
@@ -1574,7 +1626,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f3.q6.a)
+            switch (f3j6)
             {
                 case 1:
                     p1.identify -=3;
@@ -1604,7 +1656,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f4.q4.a)
+            switch (f4j4)
             {
                 case 1:
                     p1.identify -=3;
@@ -1634,7 +1686,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f5.q3.a)
+            switch (f5j3)
             {
                 case 1:
                     p1.identify -=3;
@@ -1664,7 +1716,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f5.q5.a)
+            switch (f5j5)
             {
                 case 1:
                     p1.identify +=5;
@@ -1694,7 +1746,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f6.q3.a)
+            switch (f6j3)
             {
                 case 1:
                     p1.identify -=3;
@@ -1724,7 +1776,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f8.q1.a)
+            switch (f8j1)
             {
                 case 1:
                     p1.identify +=5;
@@ -1754,11 +1806,11 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f9.q1.a)
+            switch (f9j1)
             {
-                case 1:
-                    p1.identify +=5;
-                    p2.identify -=5;
+                case '1':
+                    p1.identify = p1.identify + 5;
+                    p2.identify = p2.identify - 5;
                     break;
                 case 2:
                     p1.identify +=4;
@@ -1784,9 +1836,9 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f9.q6.a)
+            switch (f9j6)
             {
-                case 1:
+                case '1':
                     p1.identify -=3;
                     p2.identify +=3;
                     break;
@@ -1814,7 +1866,7 @@ namespace PersonalityTest
                 default:
                     break;
             }
-            switch (f10.q3.a)
+            switch (f10j3)
             {
                 case 1:
                     p1.identify -=3;
@@ -1849,7 +1901,97 @@ namespace PersonalityTest
 
         public void Main()
         {
-            Form();
+            Form1 f1 = new Form1();
+            {
+                f1j1 = f1.j1;
+                f1j2 = f1.j2;
+                f1j3 = f1.j3;
+                f1j4 = f1.j4;
+                f1j5 = f1.j5;
+                f1j6 = f1.j6;
+            }
+            Form2 f2 = new Form2();
+            {
+                f2j1 = f2.j1;
+                f2j2 = f2.j2;
+                f2j3 = f2.j3;
+                f2j4 = f2.j4;
+                f2j5 = f2.j5;
+                f2j6 = f2.j6;
+            }
+            Form3 f3 = new Form3();
+            {
+                f3j1 = f3.j1;
+                f3j2 = f3.j2;
+                f3j3 = f3.j3;
+                f3j4 = f3.j4;
+                f3j5 = f3.j5;
+                f3j6 = f3.j6;
+            }
+            Form4 f4 = new Form4();
+            {
+                f4j1 = f4.j1;
+                f4j2 = f4.j2;
+                f4j3 = f4.j3;
+                f4j4 = f4.j4;
+                f4j5 = f4.j5;
+                f4j6 = f4.j6;
+            }
+            Form5 f5 = new Form5();
+            {
+                f5j1 = f5.j1;
+                f5j2 = f5.j2;
+                f5j3 = f5.j3;
+                f5j4 = f5.j4;
+                f5j5 = f5.j5;
+                f5j6 = f5.j6;
+            }
+            Form6 f6 = new Form6();
+            {
+                f6j1 = f6.j1;
+                f6j2 = f6.j2;
+                f6j3 = f6.j3;
+                f6j4 = f6.j4;
+                f6j5 = f6.j5;
+                f6j6 = f6.j6;
+            }
+            Form7 f7 = new Form7();
+            {
+                f7j1 = f7.j1;
+                f7j2 = f7.j2;
+                f7j3 = f7.j3;
+                f7j4 = f7.j4;
+                f7j5 = f7.j5;
+                f7j6 = f7.j6;
+            }
+            Form8 f8 = new Form8();
+            {
+                f8j1 = f8.j1;
+                f8j2 = f8.j2;
+                f8j3 = f8.j3;
+                f8j4 = f8.j4;
+                f8j5 = f8.j5;
+                f8j6 = f8.j6;
+            }
+            Form9 f9 = new Form9();
+            {
+                f9j1 = f9.j1;
+                f9j2 = f9.j2;
+                f9j3 = f9.j3;
+                f9j4 = f9.j4;
+                f9j5 = f9.j5;
+                f9j6 = f9.j6;
+            }
+            Form10 f10 = new Form10();
+            {
+                f10j1 = f10.j1;
+                f10j2 = f10.j2;
+                f10j3 = f10.j3;
+                f10j4 = f10.j4;
+                f10j5 = f10.j5;
+                f10j6 = f10.j6;
+            }
+            MessageBox.Show(f9.q1.a + "selectat.");
             p1.mind = 49;
             p2.mind = 51;
             p1.energy = 45;
@@ -1930,16 +2072,6 @@ namespace PersonalityTest
                     t.identify--;
                 }
             }
-            a1 = p1.mind.ToString();
-            a2 = p2.mind.ToString();
-            b1 = p1.energy.ToString();
-            b2 = p2.energy.ToString();
-            c1 = p1.nature.ToString();
-            c2 = p2.nature.ToString();
-            d1 = p1.tactics.ToString();
-            d2 = p2.tactics.ToString();
-            e1 = p1.identify.ToString();
-            e2 = p2.identify.ToString();
         }
     }
 }

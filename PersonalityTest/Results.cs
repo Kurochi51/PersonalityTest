@@ -13,25 +13,26 @@ namespace PersonalityTest
 {
     public partial class Results : Form
     {
-        PersonalityMath math;
+        PersonalityMath math = new PersonalityMath();
+        Form9 frm = new Form9();
 
         public Results()
         {
             InitializeComponent();
-        }
-
-        private void Results_Load(object sender, EventArgs e)
-        {
-            m1.Text = math.a1;
-            m2.Text = math.a2;
-            e1.Text = math.b1;
-            e2.Text = math.b2;
-            n1.Text = math.c1;
-            n2.Text = math.c2;
-            t1.Text = math.d1;
-            t2.Text = math.d2;
-            i1.Text = math.e1;
-            i2.Text = math.e2;
+            math.Main();
+            test1.Text = frm.j1.ToString();
+            MessageBox.Show(frm.q1.a + "selectat.");
+            test2s.Text = math.f9j6.ToString();
+            m1.Text = math.a1.ToString();
+            m2.Text = math.a2.ToString();
+            e1.Text = math.b1.ToString();
+            e2.Text = math.b2.ToString();
+            n1.Text = math.c1.ToString();
+            n2.Text = math.c2.ToString();
+            t1.Text = math.d1.ToString();
+            t2.Text = math.d2.ToString();
+            i1.Text = math.e1.ToString();
+            i2.Text = math.e2.ToString();
         }
     }
 }

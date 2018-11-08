@@ -1,17 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PersonalityTest
 {
     public partial class Form10 : Form
     {
+
+        public int j1
+        {
+            get { return q1.a; }
+            set { q1.a = value; }
+        }
+        public int j2
+        {
+            get { return q2.a; }
+            set { q2.a = value; }
+        }
+        public int j3
+        {
+            get { return q3.a; }
+            set { q3.a = value; }
+        }
+        public int j4
+        {
+            get { return q4.a; }
+            set { q4.a = value; }
+        }
+        public int j5
+        {
+            get { return q5.a; }
+            set { q5.a = value; }
+        }
+        public int j6
+        {
+            get { return q6.a; }
+            set { q6.a = value; }
+        }
+
         public struct Answers { public int a; public RadioButton n; }
         public Answers q1, q2, q3, q4, q5, q6;
 
@@ -115,7 +141,7 @@ namespace PersonalityTest
             {
                 t++;
             }
-            // DEBUGGING > T==0, CHANGE TO != WHEN FINISHED
+            // DEBUG MODE ACTIVE: to remove replace == with !=
             if (t == 0)
             {
                 MessageBox.Show("You haven't answered all the questions!");

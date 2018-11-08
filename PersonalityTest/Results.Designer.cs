@@ -43,6 +43,9 @@
             this.t2 = new System.Windows.Forms.Label();
             this.t1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.test2s = new System.Windows.Forms.Label();
+            this.test1 = new System.Windows.Forms.Label();
+            this.test2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -180,11 +183,41 @@
             this.label15.TabIndex = 9;
             this.label15.Text = "Tactics";
             // 
+            // test2s
+            // 
+            this.test2s.AutoSize = true;
+            this.test2s.Location = new System.Drawing.Point(241, 323);
+            this.test2s.Name = "test2s";
+            this.test2s.Size = new System.Drawing.Size(35, 13);
+            this.test2s.TabIndex = 13;
+            this.test2s.Text = "label7";
+            // 
+            // test1
+            // 
+            this.test1.AutoSize = true;
+            this.test1.Location = new System.Drawing.Point(200, 323);
+            this.test1.Name = "test1";
+            this.test1.Size = new System.Drawing.Size(35, 13);
+            this.test1.TabIndex = 12;
+            this.test1.Text = "label8";
+            // 
+            // test2
+            // 
+            this.test2.AutoSize = true;
+            this.test2.Location = new System.Drawing.Point(312, 323);
+            this.test2.Name = "test2";
+            this.test2.Size = new System.Drawing.Size(35, 13);
+            this.test2.TabIndex = 14;
+            this.test2.Text = "label7";
+            // 
             // Results
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 556);
+            this.Controls.Add(this.test2);
+            this.Controls.Add(this.test2s);
+            this.Controls.Add(this.test1);
             this.Controls.Add(this.t2);
             this.Controls.Add(this.t1);
             this.Controls.Add(this.label15);
@@ -224,5 +257,8 @@
         private System.Windows.Forms.Label t2;
         private System.Windows.Forms.Label t1;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label test2s;
+        private System.Windows.Forms.Label test1;
+        private System.Windows.Forms.Label test2;
     }
 }
