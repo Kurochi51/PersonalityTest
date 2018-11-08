@@ -14,15 +14,11 @@ namespace PersonalityTest
     public partial class Results : Form
     {
         PersonalityMath math = new PersonalityMath();
-        Form9 frm = new Form9();
 
         public Results()
         {
             InitializeComponent();
-            math.Main();
-            test1.Text = frm.j1.ToString();
-            MessageBox.Show(frm.q1.a + "selectat.");
-            test2s.Text = math.f9j6.ToString();
+            //math.Main();
             m1.Text = math.a1.ToString();
             m2.Text = math.a2.ToString();
             e1.Text = math.b1.ToString();

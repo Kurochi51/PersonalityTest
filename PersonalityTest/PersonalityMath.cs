@@ -23,7 +23,6 @@ namespace PersonalityTest
         public int f9j1, f9j2, f9j3, f9j4, f9j5, f9j6;
         public int f10j1, f10j2, f10j3, f10j4, f10j5, f10j6;
 
-
         public struct Personality { public int mind; public int energy; public int nature; public int tactics; public int identify; }
         public Personality p1, p2, t;
 
@@ -1808,9 +1807,9 @@ namespace PersonalityTest
             }
             switch (f9j1)
             {
-                case '1':
-                    p1.identify = p1.identify + 5;
-                    p2.identify = p2.identify - 5;
+                case 1:
+                    p1.identify +=5;
+                    p2.identify -=5;
                     break;
                 case 2:
                     p1.identify +=4;
@@ -1898,6 +1897,11 @@ namespace PersonalityTest
             }
         }
 #pragma warning restore CS1690 // Accessing a member on a field of a marshal-by-reference class may cause a runtime exception
+
+        public PersonalityMath (int a, int b, int c, int d, int e, int f)
+        {
+
+        }
 
         public void Main()
         {
@@ -1991,7 +1995,6 @@ namespace PersonalityTest
                 f10j5 = f10.j5;
                 f10j6 = f10.j6;
             }
-            MessageBox.Show(f9.q1.a + "selectat.");
             p1.mind = 49;
             p2.mind = 51;
             p1.energy = 45;
