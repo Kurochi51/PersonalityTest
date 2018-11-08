@@ -12,7 +12,24 @@ namespace PersonalityTest
 {
     class PersonalityMath
     {
-        Form1 f1; Form2 f2; Form3 f3; Form4 f4; Form5 f5; Form6 f6; Form7 f7; Form8 f8; Form9 f9; Form10 f10;
+        public int f1j1, f1j2, f1j3, f1j4, f1j5, f1j6;
+        public void Form()
+        {
+            Form1 f1 = new Form1();
+            if(f1.ShowDialog()==DialogResult.None)
+            {
+                f1j1 = f1.j1;
+            }
+            Form2 f2;
+            Form3 f3;
+            Form4 f4;
+            Form5 f5;
+            Form6 f6;
+            Form7 f7;
+            Form8 f8;
+            Form9 f9;
+            Form10 f10;
+        }
 
         public struct Personality { public int mind; public int energy; public int nature; public int tactics; public int identify; }
         public Personality p1, p2, t;
@@ -24,7 +41,7 @@ namespace PersonalityTest
 
         public void Mind()
         {
-            switch (f1.q1.a)
+            switch (f1j1)
             {
                 case 1:
                     p1.mind -= 3;
@@ -1832,6 +1849,7 @@ namespace PersonalityTest
 
         public void Main()
         {
+            Form();
             p1.mind = 49;
             p2.mind = 51;
             p1.energy = 45;
@@ -1912,7 +1930,6 @@ namespace PersonalityTest
                     t.identify--;
                 }
             }
-            MessageBox.Show(a1);
             a1 = p1.mind.ToString();
             a2 = p2.mind.ToString();
             b1 = p1.energy.ToString();
