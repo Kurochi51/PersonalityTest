@@ -1898,11 +1898,6 @@ namespace PersonalityTest
         }
 #pragma warning restore CS1690 // Accessing a member on a field of a marshal-by-reference class may cause a runtime exception
 
-        public PersonalityMath (int a, int b, int c, int d, int e, int f)
-        {
-
-        }
-
         public void Main()
         {
             Form1 f1 = new Form1();
@@ -1914,15 +1909,15 @@ namespace PersonalityTest
                 f1j5 = f1.j5;
                 f1j6 = f1.j6;
             }
-            Form2 f2 = new Form2();
-            {
-                f2j1 = f2.j1;
-                f2j2 = f2.j2;
-                f2j3 = f2.j3;
-                f2j4 = f2.j4;
-                f2j5 = f2.j5;
-                f2j6 = f2.j6;
-            }
+            //Form2 f2 = new Form2();
+            //{
+            //    f2j1 = f2.j1;
+            //    f2j2 = f2.j2;
+            //    f2j3 = f2.j3;
+            //    f2j4 = f2.j4;
+            //    f2j5 = f2.j5;
+            //    f2j6 = f2.j6;
+            //}
             Form3 f3 = new Form3();
             {
                 f3j1 = f3.j1;

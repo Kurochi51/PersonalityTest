@@ -161,8 +161,10 @@ namespace PersonalityTest
             }
             else
             {
-                Form2 window = new Form2();
-                PersonalityMath t = new PersonalityMath(q1.a,q2.a,q3.a,q4.a,q5.a,q6.a);
+                /// Attempt making an array and passing it around
+                Form2 window = new Form2(q1.a, q2.a, q3.a, q4.a, q5.a, q6.a);
+                /// Passing 6 variables works,but I can't do it multiple times neither on parts
+                //PersonalityMath2 t = new PersonalityMath2(q1.a,q2.a,q3.a,q4.a,q5.a,q6.a);
                 window.Show();
                 window.Location = this.Location;
                 this.Hide();

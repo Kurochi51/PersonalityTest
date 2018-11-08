@@ -43,8 +43,9 @@ namespace PersonalityTest
 
         int t = 0;
 
-        public Form2()
+        public Form2(int a, int b, int c, int d, int e, int f, int m)
         {
+            
             InitializeComponent();
         }
 

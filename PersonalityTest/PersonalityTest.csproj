@@ -108,6 +108,12 @@
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="PersonalityMath.cs" />
+    <Compile Include="PersonalityMath2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalityMath2.Designer.cs">
+      <DependentUpon>PersonalityMath2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results.cs">
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalityMath2.resx">
+      <DependentUpon>PersonalityMath2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

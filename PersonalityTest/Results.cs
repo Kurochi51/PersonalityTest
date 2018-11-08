@@ -13,11 +13,11 @@ namespace PersonalityTest
 {
     public partial class Results : Form
     {
-        PersonalityMath math = new PersonalityMath();
+        //PersonalityMath2 math = new PersonalityMath2();
 
         public Results()
         {
-            InitializeComponent();
+            /*InitializeComponent();
             //math.Main();
             m1.Text = math.a1.ToString();
             m2.Text = math.a2.ToString();
@@ -28,7 +28,7 @@ namespace PersonalityTest
             t1.Text = math.d1.ToString();
             t2.Text = math.d2.ToString();
             i1.Text = math.e1.ToString();
-            i2.Text = math.e2.ToString();
+            i2.Text = math.e2.ToString();*/
         }
     }
 }
