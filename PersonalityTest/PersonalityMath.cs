@@ -12,22 +12,15 @@ namespace PersonalityTest
 {
     class PersonalityMath
     {
-        public int f1j1, f1j2, f1j3, f1j4, f1j5, f1j6;
-        public int f2j1, f2j2, f2j3, f2j4, f2j5, f2j6;
-        public int f3j1, f3j2, f3j3, f3j4, f3j5, f3j6;
-        public int f4j1, f4j2, f4j3, f4j4, f4j5, f4j6;
-        public int f5j1, f5j2, f5j3, f5j4, f5j5, f5j6;
-        public int f6j1, f6j2, f6j3, f6j4, f6j5, f6j6;
-        public int f7j1, f7j2, f7j3, f7j4, f7j5, f7j6;
-        public int f8j1, f8j2, f8j3, f8j4, f8j5, f8j6;
-        public int f9j1, f9j2, f9j3, f9j4, f9j5, f9j6;
-        public int f10j1, f10j2, f10j3, f10j4, f10j5, f10j6;
+        public int f1j1, f1j2, f1j3, f1j4, f1j5, f1j6, f2j1, f2j2, f2j3, f2j4, f2j5, f2j6, f3j1, f3j2, f3j3, f3j4, f3j5, f3j6, f4j1, f4j2, f4j3, f4j4, f4j5, f4j6, f5j1, f5j2, f5j3, f5j4, f5j5, f5j6, f6j1, f6j2, f6j3, f6j4, f6j5, f6j6, f7j1, f7j2, f7j3, f7j4, f7j5, f7j6, f8j1, f8j2, f8j3, f8j4, f8j5, f8j6, f9j1, f9j2, f9j3, f9j4, f9j5, f9j6, f10j1, f10j2, f10j3, f10j4, f10j5, f10j6;
+
 
         public struct Personality { public int mind; public int energy; public int nature; public int tactics; public int identify; }
         public Personality p1, p2, t;
 
         public int i;
 
+#pragma warning disable IDE1006 // Naming Styles
         public int a1
         {
             get { return p1.mind; }
@@ -87,8 +80,73 @@ namespace PersonalityTest
             get { return p2.identify; }
             set { p2.identify = value; }
         }
+#pragma warning restore IDE1006 // Naming Styles
 
 #pragma warning disable CS1690 // Accessing a member on a field of a marshal-by-reference class may cause a runtime exception
+
+        public PersonalityMath(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2, int a3, int b3, int c3, int d3, int e3, int f3, int a4, int b4, int c4, int d4, int e4, int f4, int a5, int b5, int c5, int d5, int e5, int f5, int a6, int b6, int c6, int d6, int e6, int f6, int a7, int b7, int c7, int d7, int e7, int f7, int a8, int b8, int c8, int d8, int e8, int f8, int a9, int b9, int c9, int d9, int e9, int f9, int a10, int b10, int c10, int d10, int e10, int f10)
+        {
+            f1j1 = a;
+            f1j2 = b;
+            f1j3 = c;
+            f1j4 = d;
+            f1j5 = e;
+            f1j6 = f;
+            f2j1 = a2;
+            f2j2 = b2;
+            f2j3 = c2;
+            f2j4 = d2;
+            f2j5 = e2;
+            f2j6 = f2;
+            f3j1 = a3;
+            f3j2 = b3;
+            f3j3 = c3;
+            f3j4 = d3;
+            f3j5 = e3;
+            f3j6 = f3;
+            f4j1 = a4;
+            f4j2 = b4;
+            f4j3 = c4;
+            f4j4 = d4;
+            f4j5 = e4;
+            f4j6 = f4;
+            f5j1 = a5;
+            f5j2 = b5;
+            f5j3 = c5;
+            f5j4 = d5;
+            f5j5 = e5;
+            f5j6 = f5;
+            f6j1 = a6;
+            f6j2 = b6;
+            f6j3 = c6;
+            f6j4 = d6;
+            f6j5 = e6;
+            f6j6 = f6;
+            f7j1 = a7;
+            f7j2 = b7;
+            f7j3 = c7;
+            f7j4 = d7;
+            f7j5 = e7;
+            f7j6 = f7;
+            f8j1 = a8;
+            f8j2 = b8;
+            f8j3 = c8;
+            f8j4 = d8;
+            f8j5 = e8;
+            f8j6 = f8;
+            f9j1 = a9;
+            f9j2 = b9;
+            f9j3 = c9;
+            f9j4 = d9;
+            f9j5 = e9;
+            f9j6 = f9;
+            f10j1 = a10;
+            f10j2 = b10;
+            f10j3 = c10;
+            f10j4 = d10;
+            f10j5 = e10;
+            f10j6 = f10;
+        }
 
         public void Mind()
         {
@@ -1980,6 +2038,8 @@ namespace PersonalityTest
                     t.identify--;
                 }
             }
+            Results window = new Results(p1.mind, p2.mind, p1.energy, p2.energy, p1.nature, p2.nature, p1.tactics, p2.tactics, p1.identify, p2.identify);
+            window.Show();
         }
     }
 }

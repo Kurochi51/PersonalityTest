@@ -11,7 +11,7 @@ namespace PersonalityTest
         public struct Answers { public int a; public RadioButton n; }
         public Answers q1, q2, q3, q4, q5, q6;
 
-        int t = 0;
+        int t = 0, k = 0;
 
         public Form3(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2)
         {
@@ -123,22 +123,10 @@ namespace PersonalityTest
             {
                 t++;
             }
-            // DEBUG MODE ACTIVE: to remove replace == with !=
-            if (t == 0)
+            if (t != 0 && k == 0)
             {
                 MessageBox.Show("You haven't answered all the questions!");
-                if (q1.n != null)
-                    q1.n.Checked = false;
-                if (q2.n != null)
-                    q2.n.Checked = false;
-                if (q3.n != null)
-                    q3.n.Checked = false;
-                if (q4.n != null)
-                    q4.n.Checked = false;
-                if (q5.n != null)
-                    q5.n.Checked = false;
-                if (q6.n != null)
-                    q6.n.Checked = false;
+                k++;
                 t = 0;
             }
             else
