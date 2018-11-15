@@ -564,6 +564,6 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label pt;
+        public System.Windows.Forms.Label pt;
     }
 }
