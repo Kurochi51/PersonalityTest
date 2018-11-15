@@ -60,11 +60,11 @@ namespace PersonalityTest
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Defender ISFJ-T";
+                                pt.Text = "Defender (ISFJ-T)";
                             }
                             else
                             {
-                                pt.Text = "Defender ISFJ-A";
+                                pt.Text = "Defender (ISFJ-A)";
                             }
                         }
                     }
@@ -74,22 +74,22 @@ namespace PersonalityTest
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Virtuoso ISTP-T";
+                                pt.Text = "Virtuoso (ISTP-T)";
                             }
                             else
                             {
-                                pt.Text = "Virtuoso ISTP-A";
+                                pt.Text = "Virtuoso (ISTP-A)";
                             }
                         }
                         else
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Logistician ISTJ-T";
+                                pt.Text = "Logistician (ISTJ-T)";
                             }
                             else
                             {
-                                pt.Text = "Logistician ISTJ-A";
+                                pt.Text = "Logistician (ISTJ-A)";
                             }
                         }
                     }
@@ -102,22 +102,22 @@ namespace PersonalityTest
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Mediator INFP-T";
+                                pt.Text = "Mediator (INFP-T)";
                             }
                             else
                             {
-                                pt.Text = "Mediator INFP-A";
+                                pt.Text = "Mediator (INFP-A)";
                             }
                         }
                         else
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Advocate INFJ-T";
+                                pt.Text = "Advocate (INFJ-T)";
                             }
                             else
                             {
-                                pt.Text = "Advocate INFJ-A";
+                                pt.Text = "Advocate (INFJ-A)";
                             }
                         }
                     }
@@ -127,22 +127,22 @@ namespace PersonalityTest
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Logician INTP-T";
+                                pt.Text = "Logician (INTP-T)";
                             }
                             else
                             {
-                                pt.Text = "Logician INTP-A";
+                                pt.Text = "Logician (INTP-A)";
                             }
                         }
                         else
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Architect INTJ-T";
+                                pt.Text = "Architect (INTJ-T)";
                             }
                             else
                             {
-                                pt.Text = "Architect INTJ-A";
+                                pt.Text = "Architect (INTJ-A)";
                             }
                         }
                     }
@@ -158,22 +158,22 @@ namespace PersonalityTest
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Entertainer ESFP-T";
+                                pt.Text = "Entertainer (ESFP-T)";
                             }
                             else
                             {
-                                pt.Text = "Entertainer ESFP-A";
+                                pt.Text = "Entertainer (ESFP-A)";
                             }
                         }
                         else
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Consul ESFJ-T";
+                                pt.Text = "Consul (ESFJ-T)";
                             }
                             else
                             {
-                                pt.Text = "Consul ESFJ-A";
+                                pt.Text = "Consul (ESFJ-A)";
                             }
                         }
                     }
@@ -183,22 +183,22 @@ namespace PersonalityTest
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Entrepreneur ESTP-T";
+                                pt.Text = "Entrepreneur (ESTP-T)";
                             }
                             else
                             {
-                                pt.Text = "Entrepreneur ESTP-A";
+                                pt.Text = "Entrepreneur (ESTP-A)";
                             }
                         }
                         else
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Executive ESTJ-T";
+                                pt.Text = "Executive (ESTJ-T)";
                             }
                             else
                             {
-                                pt.Text = "Executive ESTJ-A";
+                                pt.Text = "Executive (ESTJ-A)";
                             }
                         }
                     }
@@ -211,22 +211,22 @@ namespace PersonalityTest
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Campaigner ENFP-T";
+                                pt.Text = "Campaigner (ENFP-T)";
                             }
                             else
                             {
-                                pt.Text = "Campaigner ENFP-A";
+                                pt.Text = "Campaigner (ENFP-A)";
                             }
                         }
                         else
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Protagonist ENFJ-T";
+                                pt.Text = "Protagonist (ENFJ-T)";
                             }
                             else
                             {
-                                pt.Text = "Protagonist ENFJ-A";
+                                pt.Text = "Protagonist (ENFJ-A)";
                             }
                         }
                     }
@@ -236,22 +236,22 @@ namespace PersonalityTest
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Debater ENTP-T";
+                                pt.Text = "Debater (ENTP-T)";
                             }
                             else
                             {
-                                pt.Text = "Debater ENTP-A";
+                                pt.Text = "Debater (ENTP-A)";
                             }
                         }
                         else
                         {
                             if (e)// -T or -A
                             {
-                                pt.Text = "Commander ENTJ-T";
+                                pt.Text = "Commander (ENTJ-T)";
                             }
                             else
                             {
-                                pt.Text = "Commander ENTJ-A";
+                                pt.Text = "Commander (ENTJ-A)";
                             }
                         }
                     }
