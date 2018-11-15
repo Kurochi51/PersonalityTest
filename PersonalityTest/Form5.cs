@@ -6,44 +6,39 @@ namespace PersonalityTest
 {
     public partial class Form5 : Form
     {
-        public int j1
-        {
-            get { return q1.a; }
-            set { q1.a = value; }
-        }
-        public int j2
-        {
-            get { return q2.a; }
-            set { q2.a = value; }
-        }
-        public int j3
-        {
-            get { return q3.a; }
-            set { q3.a = value; }
-        }
-        public int j4
-        {
-            get { return q4.a; }
-            set { q4.a = value; }
-        }
-        public int j5
-        {
-            get { return q5.a; }
-            set { q5.a = value; }
-        }
-        public int j6
-        {
-            get { return q6.a; }
-            set { q6.a = value; }
-        }
+        public int j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, j16, j17, j18, j19, j20, j21, j22, j23, j24;
 
         public struct Answers { public int a; public RadioButton n; }
         public Answers q1, q2, q3, q4, q5, q6;
 
         int t = 0;
 
-        public Form5()
+        public Form5(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2, int a3, int b3, int c3, int d3, int e3, int f3, int a4, int b4, int c4, int d4, int e4, int f4)
         {
+            j1 = a;
+            j2 = b;
+            j3 = c;
+            j4 = d;
+            j5 = e;
+            j6 = f;
+            j7 = a2;
+            j8 = b2;
+            j9 = c2;
+            j10 = d2;
+            j11 = e2;
+            j12 = f2;
+            j13 = a3;
+            j14 = b3;
+            j15 = c3;
+            j16 = d3;
+            j17 = e3;
+            j18 = f3;
+            j19 = a4;
+            j20 = b4;
+            j21 = c4;
+            j22 = d4;
+            j23 = e4;
+            j24 = f4;
             InitializeComponent();
         }
 

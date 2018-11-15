@@ -7,45 +7,21 @@ namespace PersonalityTest
     public partial class Form2 : Form
     {
 
-        public int j1
-        {
-            get { return q1.a; }
-            set { q1.a = value; }
-        }
-        public int j2
-        {
-            get { return q2.a; }
-            set { q2.a = value; }
-        }
-        public int j3
-        {
-            get { return q3.a; }
-            set { q3.a = value; }
-        }
-        public int j4
-        {
-            get { return q4.a; }
-            set { q4.a = value; }
-        }
-        public int j5
-        {
-            get { return q5.a; }
-            set { q5.a = value; }
-        }
-        public int j6
-        {
-            get { return q6.a; }
-            set { q6.a = value; }
-        }
+        public int j1, j2, j3, j4, j5, j6;
 
         public struct Answers { public int a; public RadioButton n; }
         public Answers q1, q2, q3, q4, q5, q6;
 
         int t = 0;
 
-        public Form2(int a, int b, int c, int d, int e, int f, int m)
+        public Form2(int a, int b, int c, int d, int e, int f)
         {
-            
+            j1 = a;
+            j2 = b;
+            j3 = c;
+            j4 = d;
+            j5 = e;
+            j6 = f;
             InitializeComponent();
         }
 
@@ -162,7 +138,7 @@ namespace PersonalityTest
             }
             else
             {
-                Form3 window = new Form3();
+                Form3 window = new Form3(j1, j2, j3, j4, j5, j6, q1.a, q2.a, q3.a, q4.a, q5.a, q6.a);
                 window.Show();
                 window.Location = this.Location;
                 this.Hide();

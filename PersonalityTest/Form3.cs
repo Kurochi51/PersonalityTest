@@ -6,45 +6,27 @@ namespace PersonalityTest
 {
     public partial class Form3 : Form
     {
-
-        public int j1
-        {
-            get { return q1.a; }
-            set { q1.a = value; }
-        }
-        public int j2
-        {
-            get { return q2.a; }
-            set { q2.a = value; }
-        }
-        public int j3
-        {
-            get { return q3.a; }
-            set { q3.a = value; }
-        }
-        public int j4
-        {
-            get { return q4.a; }
-            set { q4.a = value; }
-        }
-        public int j5
-        {
-            get { return q5.a; }
-            set { q5.a = value; }
-        }
-        public int j6
-        {
-            get { return q6.a; }
-            set { q6.a = value; }
-        }
+        public int j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12;
 
         public struct Answers { public int a; public RadioButton n; }
         public Answers q1, q2, q3, q4, q5, q6;
 
         int t = 0;
 
-        public Form3()
+        public Form3(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2)
         {
+            j1 = a;
+            j2 = b;
+            j3 = c;
+            j4 = d;
+            j5 = e;
+            j6 = f;
+            j7 = a2;
+            j8 = b2;
+            j9 = c2;
+            j10 = d2;
+            j11 = e2;
+            j12 = f2;
             InitializeComponent();
         }
 
@@ -161,7 +143,7 @@ namespace PersonalityTest
             }
             else
             {
-                Form4 window = new Form4();
+                Form4 window = new Form4(j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, q1.a, q2.a, q3.a, q4.a, q5.a, q6.a);
                 window.Show();
                 window.Location = this.Location;
                 this.Hide();
