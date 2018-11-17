@@ -18,74 +18,13 @@ namespace PersonalityTest
         public struct Personality { public int mind; public int energy; public int nature; public int tactics; public int identify; }
         public Personality p1, p2, t;
 
-        public int i;
-
-#pragma warning disable IDE1006 // Naming Styles
-        public int a1
-        {
-            get { return p1.mind; }
-            set { p1.mind = value; }
-        }
-
-        public int a2
-        { 
-            get { return p2.mind; }
-            set { p2.mind = value; }
-        }
-
-        public int b1
-        {
-            get { return p1.energy; }
-            set { p1.energy = value; }
-        }
-
-        public int b2
-        {
-            get { return p2.energy; }
-            set { p2.energy = value; }
-        }
-
-        public int c1
-        {
-            get { return p1.nature; }
-            set { p1.nature = value; }
-        }
-
-        public int c2
-        {
-            get { return p2.nature; }
-            set { p2.nature = value; }
-        }
-
-        public int d1
-        {
-            get { return p1.tactics; }
-            set { p1.tactics = value; }
-        }
-
-        public int d2
-        {
-            get { return p2.tactics; }
-            set { p2.tactics = value; }
-        }
-
-        public int e1
-        {
-            get { return p1.identify; }
-            set { p1.identify = value; }
-        }
-
-        public int e2
-        {
-            get { return p2.identify; }
-            set { p2.identify = value; }
-        }
-#pragma warning restore IDE1006 // Naming Styles
+        public int i, i2;
 
 #pragma warning disable CS1690 // Accessing a member on a field of a marshal-by-reference class may cause a runtime exception
 
-        public PersonalityMath(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2, int a3, int b3, int c3, int d3, int e3, int f3, int a4, int b4, int c4, int d4, int e4, int f4, int a5, int b5, int c5, int d5, int e5, int f5, int a6, int b6, int c6, int d6, int e6, int f6, int a7, int b7, int c7, int d7, int e7, int f7, int a8, int b8, int c8, int d8, int e8, int f8, int a9, int b9, int c9, int d9, int e9, int f9, int a10, int b10, int c10, int d10, int e10, int f10)
+        public PersonalityMath(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2, int a3, int b3, int c3, int d3, int e3, int f3, int a4, int b4, int c4, int d4, int e4, int f4, int a5, int b5, int c5, int d5, int e5, int f5, int a6, int b6, int c6, int d6, int e6, int f6, int a7, int b7, int c7, int d7, int e7, int f7, int a8, int b8, int c8, int d8, int e8, int f8, int a9, int b9, int c9, int d9, int e9, int f9, int a10, int b10, int c10, int d10, int e10, int f10, int i)
         {
+            i2 = i;
             f1j1 = a;
             f1j2 = b;
             f1j3 = c;
@@ -2038,7 +1977,7 @@ namespace PersonalityTest
                     t.identify--;
                 }
             }
-            Results window = new Results(p1.mind, p2.mind, p1.energy, p2.energy, p1.nature, p2.nature, p1.tactics, p2.tactics, p1.identify, p2.identify);
+            Results window = new Results(p1.mind, p2.mind, p1.energy, p2.energy, p1.nature, p2.nature, p1.tactics, p2.tactics, p1.identify, p2.identify, i2);
             window.Show();
         }
     }

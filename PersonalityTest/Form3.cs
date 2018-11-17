@@ -6,15 +6,70 @@ namespace PersonalityTest
 {
     public partial class Form3 : Form
     {
-        public int j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12;
+        public int j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, i2;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (i2 == 0)
+            {
+                Text = "Test de personalitate";
+                button2.Text = "English";
+                label21.Text = "Nu vă deranjează să vă aflaţi în centrul atenţiei.";
+                label3.Text = "Vă consideraţi mai mult practic/ă decât creativ/ă.";
+                label6.Text = "Oamenii vă deranjează rar.";
+                label9.Text = "De obicei faceţi planuri de călătorie bine planificate.";
+                label12.Text = "De obicei este dificil să vă raportaţi la sentimentele altora.";
+                label15.Text = "Vă puteţi schimba dispoziţia foarte rapid.";
+                label19.Text = "Ești de acord";
+                label1.Text = "Ești de acord";
+                label4.Text = "Ești de acord";
+                label7.Text = "Ești de acord";
+                label10.Text = "Ești de acord";
+                label13.Text = "Ești de acord";
+                label17.Text = "Nu ești de acord";
+                label2.Text = "Nu ești de acord";
+                label5.Text = "Nu ești de acord";
+                label8.Text = "Nu ești de acord";
+                label11.Text = "Nu ești de acord";
+                label14.Text = "Nu ești de acord";
+                Button1.Text = "Următoarea";
+                i2 = 1;
+            }
+            else
+            {
+                i2 = 0;
+                Text = "Personality Test";
+                Button1.Text = "Next";
+                button2.Text = "Romanian";
+                label17.Text = "Disagree";
+                label2.Text = "Disagree";
+                label5.Text = "Disagree";
+                label8.Text = "Disagree";
+                label11.Text = "Disagree";
+                label14.Text = "Disagree";
+                label19.Text = "Agree";
+                label1.Text = "Agree";
+                label4.Text = "Agree";
+                label7.Text = "Agree";
+                label10.Text = "Agree";
+                label13.Text = "Agree";
+                label21.Text = "You do not mind being at the center of attention.";
+                label3.Text = "You consider yourself more practical than creative.";
+                label6.Text = "People can rarely upset you.";
+                label9.Text = "Your travel plans are usually well thought out.";
+                label12.Text = "It is often difficult for you to relate to other people’s feelings.";
+                label15.Text = "Your mood can change very quickly.";
+            }
+        }
 
         public struct Answers { public int a; public RadioButton n; }
         public Answers q1, q2, q3, q4, q5, q6;
 
         int t = 0, k = 0;
 
-        public Form3(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2)
+        public Form3(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2, int i)
         {
+            i2 = i;
             j1 = a;
             j2 = b;
             j3 = c;
@@ -28,6 +83,54 @@ namespace PersonalityTest
             j11 = e2;
             j12 = f2;
             InitializeComponent();
+            if (i2 == 1)
+            {
+                Text = "Test de personalitate";
+                button2.Text = "English";
+                label21.Text = "Nu vă deranjează să vă aflaţi în centrul atenţiei.";
+                label3.Text = "Vă consideraţi mai mult practic/ă decât creativ/ă.";
+                label6.Text = "Oamenii vă deranjează rar.";
+                label9.Text = "De obicei faceţi planuri de călătorie bine planificate.";
+                label12.Text = "De obicei este dificil să vă raportaţi la sentimentele altora.";
+                label15.Text = "Vă puteţi schimba dispoziţia foarte rapid.";
+                label19.Text = "Ești de acord";
+                label1.Text = "Ești de acord";
+                label4.Text = "Ești de acord";
+                label7.Text = "Ești de acord";
+                label10.Text = "Ești de acord";
+                label13.Text = "Ești de acord";
+                label17.Text = "Nu ești de acord";
+                label2.Text = "Nu ești de acord";
+                label5.Text = "Nu ești de acord";
+                label8.Text = "Nu ești de acord";
+                label11.Text = "Nu ești de acord";
+                label14.Text = "Nu ești de acord";
+                Button1.Text = "Următoarea";
+            }
+            else
+            {
+                Text = "Personality Test";
+                Button1.Text = "Next";
+                button2.Text = "Romanian";
+                label17.Text = "Disagree";
+                label2.Text = "Disagree";
+                label5.Text = "Disagree";
+                label8.Text = "Disagree";
+                label11.Text = "Disagree";
+                label14.Text = "Disagree";
+                label19.Text = "Agree";
+                label1.Text = "Agree";
+                label4.Text = "Agree";
+                label7.Text = "Agree";
+                label10.Text = "Agree";
+                label13.Text = "Agree";
+                label21.Text = "You do not mind being at the center of attention.";
+                label3.Text = "You consider yourself more practical than creative.";
+                label6.Text = "People can rarely upset you.";
+                label9.Text = "Your travel plans are usually well thought out.";
+                label12.Text = "It is often difficult for you to relate to other people’s feelings.";
+                label15.Text = "Your mood can change very quickly.";
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -125,13 +228,20 @@ namespace PersonalityTest
             }
             if (t != 0 && k == 0)
             {
-                MessageBox.Show("You haven't answered all the questions!");
+                if (i2 == 0)
+                {
+                    MessageBox.Show("You haven't answered all the questions!");
+                }
+                else
+                {
+                    MessageBox.Show("Nu ați răspuns la toate întrebările!");
+                }
                 k++;
                 t = 0;
             }
             else
             {
-                Form4 window = new Form4(j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, q1.a, q2.a, q3.a, q4.a, q5.a, q6.a);
+                Form4 window = new Form4(j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, q1.a, q2.a, q3.a, q4.a, q5.a, q6.a, i2);
                 window.Show();
                 window.Location = this.Location;
                 this.Hide();

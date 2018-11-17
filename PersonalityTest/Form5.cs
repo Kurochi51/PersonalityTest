@@ -6,15 +6,70 @@ namespace PersonalityTest
 {
     public partial class Form5 : Form
     {
-        public int j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, j16, j17, j18, j19, j20, j21, j22, j23, j24;
+        public int j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, j16, j17, j18, j19, j20, j21, j22, j23, j24, i2;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (i2 == 0)
+            {
+                Text = "Test de personalitate";
+                button2.Text = "English";
+                label21.Text = "Rareori sunteţi distras/ă de fantezii şi idei.";
+                label3.Text = "Atunci când vă plimbaţi prin natură sunteţi adeseori pierdut/ă în gânduri.";
+                label6.Text = "Dacă cineva nu răspunde rapid la e-mail, începeţi să vă faceţi griji dacă nu cumva aţi spus ceva greşit.";
+                label9.Text = "Ca părinte aţi prefera să vă crească copilul mai debrabă bun decât inteligent.";
+                label12.Text = "Nu lăsaţi alte persoane să vă influenţeze acţiunile.";
+                label15.Text = "Visele dumneavoastră tind să se centreze pe lumea reală şi evenimentele din aceasta.";
+                label19.Text = "Ești de acord";
+                label1.Text = "Ești de acord";
+                label4.Text = "Ești de acord";
+                label7.Text = "Ești de acord";
+                label10.Text = "Ești de acord";
+                label13.Text = "Ești de acord";
+                label17.Text = "Nu ești de acord";
+                label2.Text = "Nu ești de acord";
+                label5.Text = "Nu ești de acord";
+                label8.Text = "Nu ești de acord";
+                label11.Text = "Nu ești de acord";
+                label14.Text = "Nu ești de acord";
+                button1.Text = "Următoarea";
+                i2 = 1;
+            }
+            else
+            {
+                i2 = 0;
+                Text = "Personality Test";
+                button1.Text = "Next";
+                button2.Text = "Romanian";
+                label17.Text = "Disagree";
+                label2.Text = "Disagree";
+                label5.Text = "Disagree";
+                label8.Text = "Disagree";
+                label11.Text = "Disagree";
+                label14.Text = "Disagree";
+                label19.Text = "Agree";
+                label1.Text = "Agree";
+                label4.Text = "Agree";
+                label7.Text = "Agree";
+                label10.Text = "Agree";
+                label13.Text = "Agree";
+                label21.Text = "You rarely get carried away by fantasies and ideas.";
+                label3.Text = "You often find yourself lost in thought when you are walking in nature.";
+                label6.Text = "If someone does not respond to your e-mail quickly, you start worrying if you said something wrong.";
+                label9.Text = "As a parent, you would rather see your child grow up kind than smart.";
+                label12.Text = "You do not let other people influence your actions.";
+                label15.Text = "When you sleep, your dreams tend to focus on the real world and its events.";
+            }
+        }
 
         public struct Answers { public int a; public RadioButton n; }
         public Answers q1, q2, q3, q4, q5, q6;
 
         int t = 0, k = 0;
 
-        public Form5(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2, int a3, int b3, int c3, int d3, int e3, int f3, int a4, int b4, int c4, int d4, int e4, int f4)
+        public Form5(int a, int b, int c, int d, int e, int f, int a2, int b2, int c2, int d2, int e2, int f2, int a3, int b3, int c3, int d3, int e3, int f3, int a4, int b4, int c4, int d4, int e4, int f4, int i)
         {
+            i2 = i;
             j1 = a;
             j2 = b;
             j3 = c;
@@ -40,6 +95,54 @@ namespace PersonalityTest
             j23 = e4;
             j24 = f4;
             InitializeComponent();
+            if (i2 == 1)
+            {
+                Text = "Test de personalitate";
+                button2.Text = "English";
+                label21.Text = "Rareori sunteţi distras/ă de fantezii şi idei.";
+                label3.Text = "Atunci când vă plimbaţi prin natură sunteţi adeseori pierdut/ă în gânduri.";
+                label6.Text = "Dacă cineva nu răspunde rapid la e-mail, începeţi să vă faceţi griji dacă nu cumva aţi spus ceva greşit.";
+                label9.Text = "Ca părinte aţi prefera să vă crească copilul mai debrabă bun decât inteligent.";
+                label12.Text = "Nu lăsaţi alte persoane să vă influenţeze acţiunile.";
+                label15.Text = "Visele dumneavoastră tind să se centreze pe lumea reală şi evenimentele din aceasta.";
+                label19.Text = "Ești de acord";
+                label1.Text = "Ești de acord";
+                label4.Text = "Ești de acord";
+                label7.Text = "Ești de acord";
+                label10.Text = "Ești de acord";
+                label13.Text = "Ești de acord";
+                label17.Text = "Nu ești de acord";
+                label2.Text = "Nu ești de acord";
+                label5.Text = "Nu ești de acord";
+                label8.Text = "Nu ești de acord";
+                label11.Text = "Nu ești de acord";
+                label14.Text = "Nu ești de acord";
+                button1.Text = "Următoarea";
+            }
+            else
+            {
+                Text = "Personality Test";
+                button1.Text = "Next";
+                button2.Text = "Romanian";
+                label17.Text = "Disagree";
+                label2.Text = "Disagree";
+                label5.Text = "Disagree";
+                label8.Text = "Disagree";
+                label11.Text = "Disagree";
+                label14.Text = "Disagree";
+                label19.Text = "Agree";
+                label1.Text = "Agree";
+                label4.Text = "Agree";
+                label7.Text = "Agree";
+                label10.Text = "Agree";
+                label13.Text = "Agree";
+                label21.Text = "You rarely get carried away by fantasies and ideas.";
+                label3.Text = "You often find yourself lost in thought when you are walking in nature.";
+                label6.Text = "If someone does not respond to your e-mail quickly, you start worrying if you said something wrong.";
+                label9.Text = "As a parent, you would rather see your child grow up kind than smart.";
+                label12.Text = "You do not let other people influence your actions.";
+                label15.Text = "When you sleep, your dreams tend to focus on the real world and its events.";
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -137,13 +240,20 @@ namespace PersonalityTest
             }
             if (t != 0 && k == 0)
             {
-                MessageBox.Show("You haven't answered all the questions!");
+                if (i2 == 0)
+                {
+                    MessageBox.Show("You haven't answered all the questions!");
+                }
+                else
+                {
+                    MessageBox.Show("Nu ați răspuns la toate întrebările!");
+                }
                 k++;
                 t = 0;
             }
             else
             {
-                Form6 window = new Form6(j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, j16, j17, j18, j19, j20, j21, j22, j23, j24, q1.a, q2.a, q3.a, q4.a, q5.a, q6.a);
+                Form6 window = new Form6(j1, j2, j3, j4, j5, j6, j7, j8, j9, j10, j11, j12, j13, j14, j15, j16, j17, j18, j19, j20, j21, j22, j23, j24, q1.a, q2.a, q3.a, q4.a, q5.a, q6.a, i2);
                 window.Show();
                 window.Location = this.Location;
                 this.Hide();
